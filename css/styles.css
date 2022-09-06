@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cormorant Upright', serif;
+    color: white;
+    background: linear-gradient(rgb(109, 4, 31), rgb(138, 12, 29),rgb(85, 5, 5)); /*Fondo degradado*/
+
+}
+.nav-enlace{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.505);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5%;
+    font-size: 1.55rem;
+}
+
+ .nav-enlace:hover{
+    font-size: 1.6rem; 
+    transition: 0.5s all;
+    transform: scale(1.1);
+} 
+
+
+
+.contenedor{
+    padding: 60px 0; /*Espacio entre elementos*/
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*Header*/
+header{
+    width: 100%;
+    height: 750px;
+    background: #333333;  /* Gradiente de la ola*/
+    background: -webkit-linear-gradient(to right, #dd18181c, #33333318), url(../img/wine.jpg) no-repeat;
+    background: linear-gradient(to right, #dd18181c, #33333318), url(../img/wine.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /*Esto es lo que esconde la imagen en la ola*/
+    position: relative; /*Para ajustar la ola*/
+
+}
+
+nav{
+    padding: 30px 50px 0 0;
+}
+
+
+.menu-horizontal{
+    list-style: none; /*Saca los puntos de la lista*/
+    display: flex;
+    justify-content:right; /*Pone el menú a la derecha*/
+}
+
+
+.menu-vertical{
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 2%;
+    font-size: 1.40rem;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 118px;
+    background-color: rgba(0, 0, 0, 0.505);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+nav a:hover{ /*El hover da efecto de color cuando pasamos el puntero por arriba del elemento*/
+    box-shadow: 0 0 40px rgb(80, 2, 2) inset;
+}
+
+
+header .textos-header{ /*Ordena el texto que va arriba de la ola*/
+    display: flex;
+    height: 550px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{ /*Titulo Bienvenidos*/
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+
+}
+
+.ola{ /*La ola se centra en la parte de abajo de la imagen*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.nosotros{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.contenedor-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copas{
+    width: 48%;
+    border-radius: 50%;
+}
+
+.nosotros .contenedor-copas{
+    width: 48%;
+}
+
+.contenedor-copas p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Redes sociales del footer*/
+.redes{
+    width: 70px;
+    height: 70px;
+    padding: 3px 3px; /*Esto separa los íconos*/
+    
+}
+
+footer div {
+    margin: 0 auto;
+    
+} 
+footer{
+    margin: 0 auto;
+    display: grid; /*Acomoda los iconos de redes*/
+}
+
+.seguinos{ 
+    font-family:'Cormorant Upright', serif;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    text-align: center;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+nav a{
+    padding: 5px 12px; /*Agregue acá este padding*/
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px; /*Separa cada palabra*/
+}
+
+
+@media (max-width:768px){ 
+    p{
+        text-align: center;
+    }
+    a{
+        display: inline;
+    }
+    h1{
+        width: 300px;
+    }
+    img{
+        width: 20px;
+    }
+    .titulo{
+        font-size: 3rem;
+    }
+    .copas{
+        width: 200px;
+        height: 200px;
+    }
+    .contenedor-nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .div-redes{
+        text-align: center;
+    }
+    .redes{
+        width: 50px;
+        height: 50px;
+    }
+}  

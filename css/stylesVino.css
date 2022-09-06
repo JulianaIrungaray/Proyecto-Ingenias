@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cormorant Upright', serif;
+    color: white;
+    background: linear-gradient(rgb(109, 4, 31), rgb(138, 12, 29),rgb(85, 5, 5)); /*Fondo degradado*/
+}
