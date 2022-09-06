@@ -15,6 +15,65 @@ body{
     width: 100%;
     font-family: 'Cormorant Upright', serif;
 }
+.contenedor-header{
+    padding-right: auto;
+    
+}
+
+nav{
+    padding: 20px 0 0 0;
+}
+
+.nav-enlace{
+    margin: 10px;
+    padding: 60px 0; /*Espacio entre elementos*/
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.505);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5%;
+    font-size: 25px;
+}
+
+.nav-enlace:hover{
+    font-size: 1.7rem; 
+    transition: 0.5s all;
+    transform: scale(1.1);
+} 
+
+.menu-horizontal{
+    list-style: none; /*Saca los puntos de la lista*/
+    display: flex;
+    justify-content:center; /*Pone el menú a la derecha*/
+}
+
+
+.menu-vertical{
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 2%;
+    font-size: 1.40rem;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 118px;
+    background-color: rgba(0, 0, 0, 0.505);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
 
 h2{
   text-align: center; 
