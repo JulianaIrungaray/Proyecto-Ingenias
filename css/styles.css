@@ -9,20 +9,6 @@ body{
     background: linear-gradient(rgb(109, 4, 31), rgb(138, 12, 29),rgb(85, 5, 5)); /*Fondo degradado*/
 
 }
-.nav-enlace{
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.505);
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 5%;
-    font-size: 25px;
-}
-
- .nav-enlace:hover{
-    font-size: 1.6rem; 
-    transition: 0.5s all;
-    transform: scale(1.1);
-} 
 
 
 
@@ -49,48 +35,52 @@ header{
 }
 
 nav{
-    padding: 30px 50px 0 0;
+	max-width: 900px;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.505);
+	font-size: 25px;
+    border-radius: 3%;
+    
 }
 
-
+.menu a:hover{
+    background-color: rgb(138, 12, 29);
+    transition: 0.5s all;
+    transform: scale(1.05);
+}
 .menu-horizontal{
-    list-style: none; /*Saca los puntos de la lista*/
-    display: flex;
-    justify-content:right; /*Pone el menú a la derecha*/
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+    
 }
-
-
-.menu-vertical{
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 2%;
-    font-size: 1.40rem;
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 10px;
+	color: white;
+	text-decoration: none;
 }
 
 .menu-vertical{
-    position: absolute;
-    display: none;
-    list-style: none;
-    width: 118px;
-    background-color: rgba(0, 0, 0, 0.505);
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 167px;
+	background-color: rgba(0, 0, 0, .5);
 }
-
 .menu-horizontal li:hover .menu-vertical{
-    display: block;
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: rgb(138, 12, 29);
 }
 
 .menu-vertical li a{
-    display: block;
-    color: white;
-    padding: 10px 10px 10px 10px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
 }
-
-nav a:hover{ /*El hover da efecto de color cuando pasamos el puntero por arriba del elemento*/
-    box-shadow: 0 0 40px rgb(80, 2, 2) inset;
-}
-
 
 header .textos-header{ /*Ordena el texto que va arriba de la ola*/
     display: flex;
@@ -179,13 +169,6 @@ footer{
     padding-top: 15px;
 }
 
-nav a{
-    padding: 5px 12px; /*Agregue acá este padding*/
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    margin-right: 10px; /*Separa cada palabra*/
-}
 
 
 @media (max-width:768px){ 
@@ -226,3 +209,6 @@ nav a{
         height: 50px;
     }
 }  
+
+
+

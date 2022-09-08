@@ -21,58 +21,51 @@ body{
 }
 
 nav{
-    padding: 20px 0 0 0;
+	max-width: 900px;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.505);
+	font-size: 25px;
+    border-radius: 3%;
+    
 }
 
-.nav-enlace{
-    margin: 10px;
-    padding: 60px 0; /*Espacio entre elementos*/
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.505);
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 5%;
-    font-size: 25px;
-}
-
-.nav-enlace:hover{
-    font-size: 1.7rem; 
+.menu a:hover{
+    background-color: rgb(138, 12, 29);
     transition: 0.5s all;
-    transform: scale(1.1);
-} 
-
+    transform: scale(1.05);
+}
 .menu-horizontal{
-    list-style: none; /*Saca los puntos de la lista*/
-    display: flex;
-    justify-content:center; /*Pone el menú a la derecha*/
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+    
 }
-
-
-.menu-vertical{
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 2%;
-    font-size: 1.40rem;
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 10px;
+	color: white;
+	text-decoration: none;
 }
 
 .menu-vertical{
-    position: absolute;
-    display: none;
-    list-style: none;
-    width: 118px;
-    background-color: rgba(0, 0, 0, 0.505);
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 167px;
+	background-color: rgba(0, 0, 0, 0.219);
 }
-
 .menu-horizontal li:hover .menu-vertical{
-    display: block;
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: rgb(138, 12, 29);
 }
 
 .menu-vertical li a{
-    display: block;
-    color: white;
-    padding: 10px 10px 10px 10px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
 }
 
 h2{
@@ -177,12 +170,6 @@ h3{
 a{
     text-decoration: none;
     color: white;
-}
-
-a:hover{
-    cursor: pointer;
-    color: rgb(109, 4, 31);
-    font-size: 2rem;
 }
 
 .botonPrincipal:hover{
