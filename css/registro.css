@@ -20,53 +20,75 @@ body{
     
 }
 
-nav{
-	max-width: 900px;
-	margin: auto;
-	background-color: rgba(0, 0, 0, 0.505);
-	font-size: 25px;
-    border-radius: 3%;
-    
+img{
+    max-width: 100%;
 }
 
-.menu a:hover{
-    background-color: rgb(138, 12, 29);
+.menu-hambur{
+    position: absolute;
+    top: 2.2rem;
+    right: 4rem;
+    cursor: pointer;
+    filter: invert(1); /*invierte el color*/
+    width: 40px;
+}
+
+@media screen and (min-width: 768px){ 
+    .menu-hambur{
+        display: none;
+    }
+}
+
+
+.main-menu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .main-menu{
+        flex-direction: row;
+    }
+}
+
+.main-menu-item{
+    padding: 1.5rem;
+}
+
+.main-menu-link{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(190, 64, 96, 0.507);
+    padding: 15px 20px;
+    border-radius: 3px;
+}
+.main-menu-link:hover{
+    background-color: rgb(129, 9, 25);
     transition: 0.5s all;
-    transform: scale(1.05);
-}
-.menu-horizontal{
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-    
-}
-.menu-horizontal > li > a{
-	display: block;
-	padding: 15px 10px;
-	color: white;
-	text-decoration: none;
+    transform: scale(2);
 }
 
-.menu-vertical{
-	position: absolute;
-	display: none;
-	list-style: none;
-	width: 167px;
-	background-color: rgba(0, 0, 0, 0.219);
-}
-.menu-horizontal li:hover .menu-vertical{
-	display: block;
-}
-.menu-vertical li:hover{
-	background-color: rgb(138, 12, 29);
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
 }
 
-.menu-vertical li a{
-	display: block;
-	color: white;
-	text-decoration: none;
-	padding: 15px 15px 15px 20px;
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
 }
+
 
 h2{
   text-align: center; 
