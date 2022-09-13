@@ -21,61 +21,71 @@ body{
     
 }
 
-nav{
-    padding: 20px 0 0 0;
+img{
+    max-width: 100%;
 }
 
-.nav-enlace{
-    margin: 10px;
-    padding: 60px 0; /*Espacio entre elementos*/
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.505);
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 5%;
-    font-size: 25px;
-}
-
-.nav-enlace:hover{
-    font-size: 1.7rem; 
-    transition: 0.5s all;
-    transform: scale(1.1);
-} 
-
-.menu-horizontal{
-    list-style: none; /*Saca los puntos de la lista*/
-    display: flex;
-    justify-content:center; /*Pone el menú a la derecha*/
-}
-
-
-.menu-vertical{
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 2%;
-    font-size: 1.40rem;
-}
-
-.menu-vertical{
+.menu-hambur{
     position: absolute;
-    display: none;
+    top: 2.2rem;
+    right: 4rem;
+    cursor: pointer;
+    filter: invert(1); /*invierte el color*/
+    width: 40px;
+}
+
+.main-menu{
     list-style: none;
-    width: 118px;
-    background-color: rgba(0, 0, 0, 0.505);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.menu-horizontal li:hover .menu-vertical{
-    display: block;
+@media screen and (min-width: 768px){ 
+    .menu-hambur{
+        display: none;
+    }
 }
 
-.menu-vertical li a{
-    display: block;
+@media screen and (min-width: 768px){
+    .main-menu{
+        flex-direction: row;
+    }
+}
+
+.main-menu-item{
+    padding: 1.5rem;
+}
+
+.main-menu-link{
     color: white;
-    padding: 10px 10px 10px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(190, 64, 96, 0.507);
+    padding: 15px 20px;
+    border-radius: 3px;
+}
+.main-menu-link:hover{
+    background-color: rgb(129, 9, 25);
+    transition: 0.5s all;
+    transform: scale(2);
 }
 
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
 
 h2{
   text-align: center; 
@@ -202,11 +212,6 @@ a{
     color: white;
 }
 
-a:hover{
-    cursor: pointer;
-    color: rgb(109, 4, 31);
-    font-size: 2rem;
-}
 
 .botonPrincipal:hover{
     cursor: pointer;
