@@ -120,21 +120,21 @@ header .textos-header{
 h1 {
     font-size: 6vmin;
     position: absolute;
-    text-shadow: rgba(0, 0, 0, 0.658) 0.1em 0.1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .border {
-    color: rgb(255, 255, 255);  
+    color: black;  
     text-shadow:
-      -2px -2px 3px black, 
-      -1px -1px 0 rgb(126, 7, 33),
-      -2px 2px 3px black,
-      -1px -1px 0 rgb(126, 7, 33);  
+      -2px -2px 3px white, 
+      -1px -1px 0 white,
+      -2px 2px 3px white,
+      -1px -1px 0 white;  
   }
   
   .wav {
-    color: rgb(160, 0, 35);
-    animation: wav 2s ease-in-out infinite;
+    color: rgb(196, 0, 42);
+    animation: wav 1.5s ease-in-out infinite;
   }
   
   @keyframes wav {
@@ -311,20 +311,7 @@ footer{
     border-bottom: 1px solid #ccc;
 }
 
-.content-foo{
-    text-align: center;
-}
 
-.content-foo h4{
-    color: #fff;
-    border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.content-foo p{
-    color: #ccc;
-}
 
 .titulo-final{ /*footer*/
     text-align: center;
@@ -390,6 +377,7 @@ footer{
     nav > a{
         margin-right: 5px;
     }
+
 
     .textos-header h1{
         font-size: 35px;
