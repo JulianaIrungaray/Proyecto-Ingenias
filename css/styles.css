@@ -89,7 +89,7 @@ img{
     border-radius: 3px;
 }
 .main-menu-link:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(58, 3, 12);
     transition: 0.5s all;
     transform: scale(2);
 }
@@ -116,11 +116,37 @@ header .textos-header{
     flex-direction: column;
     text-align: center;
 }
-
-.textos-header h1{
-    font-size: 50px;
-    color:#fff;
-}
+  /*-----------Efecto de ola en movimiento------------  */
+h1 {
+    font-size: 6vmin;
+    position: absolute;
+    text-shadow: rgba(0, 0, 0, 0.658) 0.1em 0.1em;
+  }
+  
+  .border {
+    color: rgb(255, 255, 255);  
+    text-shadow:
+      -2px -2px 3px black, 
+      -1px -1px 0 rgb(126, 7, 33),
+      -2px 2px 3px black,
+      -1px -1px 0 rgb(126, 7, 33);  
+  }
+  
+  .wav {
+    color: rgb(160, 0, 35);
+    animation: wav 2s ease-in-out infinite;
+  }
+  
+  @keyframes wav {
+    0%, 100% {
+      clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+  
+    50% {
+      clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+  }
+  /*-----------------------  */
 
 .textos-header h2{
     font-size: 30px;
@@ -255,6 +281,7 @@ main .sobre-nosotros{
 .cards .card > .contenido-texto-card{
     width: 60%;
     color: #fff;
+    font-family: 'Cormorant Upright', serif;
 }
 
 .cards .card > .contenido-texto-card p{
@@ -263,35 +290,8 @@ main .sobre-nosotros{
 }
 
 
-.about-services{
-    background: #f2f2f2;
-    padding-bottom: 30px;
-}
 
 
-.servicio-cont{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.servicio-ind{
-    width: 28%;
-    text-align: center;
-}
-
-.servicio-ind img{
-    width: 90%;
-}
-
-.servicio-ind h3{
-    margin: 10px 0;
-}
-
-.servicio-ind p{
-    font-weight: 300;
-    text-align: justify;
-}
 
 /* footer */
 
@@ -379,24 +379,6 @@ footer{
         margin-bottom: 30px;
     }
 
-
-    .servicio-cont{
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .servicio-ind{
-        width: 100%;
-        text-align: center;
-    }
-
-    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
-        margin-bottom: 60px;
-    }
-
-    .servicio-ind img{
-        width: 90%;
-    }
 }
 
 @media screen and (max-width:480px){
