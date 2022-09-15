@@ -70,6 +70,7 @@ img{
     background-color: rgba(190, 64, 96, 0.507);
     padding: 15px 20px;
     border-radius: 3px;
+    box-shadow: 5px 5px 25px 5px #000000;
 }
 .main-menu-link:hover{
     background-color: rgb(129, 9, 25);

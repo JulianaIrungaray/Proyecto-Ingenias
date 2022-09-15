@@ -175,6 +175,7 @@ main .sobre-nosotros{
 .imagen-about-us{ /*Imagen de las copas*/
     width: 48%;
     border-radius: 50%;
+    box-shadow: 5px 5px 25px 10px #000000;
 }
 
 .sobre-nosotros .contenido-textos{
@@ -440,7 +441,9 @@ footer{
     }
 
     .titulo-final{
-        font-size: 15px;
+        font-size: 10px;
+        text-align: center;
+        padding-bottom: 20px;
     }
 }
 
