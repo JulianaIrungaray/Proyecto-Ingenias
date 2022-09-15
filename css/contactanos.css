@@ -44,17 +44,8 @@ img{
     align-items: center;
 }
 
-@media screen and (min-width: 768px){ 
-    .menu-hambur{
-        display: none;
-    }
-}
 
-@media screen and (min-width: 768px){
-    .main-menu{
-        flex-direction: row;
-    }
-}
+
 
 .main-menu-item{
     padding: 1.5rem;
@@ -219,6 +210,38 @@ a{
     background-color: white;
 }
 
+@media screen and (max-width:900px){
+    header{
+        justify-content: center;
 
+    }
+    
+}
 
-
+@media screen and (max-width:480px){
+    nav{
+        display:flex;
+        justify-content: center;
+    }
+    form {
+        width: 300px;
+        width: 300px;
+        justify-content: center;
+    }
+    h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    legend{
+        
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .contenedorDiv{
+        text-align: center;
+        width: 250px;
+        width: 250px;
+        justify-content: center;
+    }
+    
+}

@@ -442,6 +442,10 @@ footer{
     .titulo-final{
         font-size: 20px;
     }
+    .img-redes{
+        align-items: center;
+        
+    }
 }
 
 
