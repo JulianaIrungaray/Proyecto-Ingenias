@@ -7,7 +7,7 @@ html{
     font-size: 65.5%;
 }
 body{
-    background: linear-gradient(rgb(109, 4, 31), rgb(147, 20, 20),rgb(85, 5, 5)); /*Fondo degradado*/
+    background-color: rgb(109, 4, 31);
     display: flex;
     justify-content: center;
     font-size: 16px;
@@ -58,7 +58,7 @@ img{
     border-radius: 3px;
 }
 .main-menu-link:hover{
-    background-color: rgb(129, 9, 25);
+    background-color: rgb(58, 3, 12);
     transition: 0.5s all;
     transform: scale(2);
 }
