@@ -7,7 +7,7 @@ html{
     font-size: 65.5%;
 }
 body{
-    background: linear-gradient(rgb(109, 4, 31), rgb(147, 20, 20),rgb(85, 5, 5)); /*Fondo degradado*/
+    background: linear-gradient(rgb(109, 4, 31), rgb(147, 20, 20),rgb(85, 5, 5)) ; /*Fondo degradado*/
     display: flex;
     justify-content: center;
     font-size: 16px;
@@ -21,18 +21,6 @@ body{
     
 }
 
-img{
-    max-width: 100%;
-}
-
-.menu-hambur{
-    position: absolute;
-    top: 2.2rem;
-    right: 4rem;
-    cursor: pointer;
-    filter: invert(1); /*invierte el color*/
-    width: 40px;
-}
 
 .main-menu{
     list-style: none;
@@ -40,7 +28,7 @@ img{
     margin-bottom: 0;
     padding-left: 220px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -219,10 +207,17 @@ a{
 }
 
 @media screen and (max-width:480px){
-    nav{
-        display:flex;
-        justify-content: center;
+    .main-menu{
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+    
+
     form {
         width: 300px;
         width: 300px;
@@ -237,11 +232,46 @@ a{
         font-size: 1.5rem;
         text-align: left;
     }
-    .contenedorDiv{
+    /* .contenedorDiv{
         text-align: center;
         width: 250px;
         width: 250px;
         justify-content: center;
+    } */
+    .boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
     }
+    .botonPrincipal{
+        align-items: left;
+    }
+    .contenedor{
+        padding: 15rem;
+     }
+     
+     .campo{
+         margin-bottom: 2rem;
+     }
+     
+     
+     .campo input{
+         background-color: rgba(255, 255, 255, 0.15);
+         width: 50%;
+         border: none;
+         border-radius: 2rem;
+         height: 2rem;
+         color: white;
+         text-align: center;
+         font-weight: 200;
+         font-size: 1.5rem;
+     }
+     textarea{
+        width: 250px;
+        font-size: 1.5rem;
+     }
+
+
     
 }
