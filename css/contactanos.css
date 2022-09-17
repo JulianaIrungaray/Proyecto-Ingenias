@@ -201,7 +201,7 @@ a{
 @media screen and (max-width:900px){
     header{
         justify-content: center;
-
+        
     }
     
 }
@@ -219,7 +219,6 @@ a{
     
 
     form {
-        width: 300px;
         width: 300px;
         justify-content: center;
     }
@@ -274,4 +273,6 @@ a{
 
 
     
+
 }
+

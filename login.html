@@ -1,55 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/registro.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/wine.png" type="image/x-icon"> <!--Es el ícono de la pestaña-->
-    <title>Login</title>
-
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="/css/registro.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800,900" rel="stylesheet">
 </head>
 <body>
-    <header> <!-- El header se usa para lo primero de la parte de arriba como el menú y presentación -->
-        <div class="contenedor-header"> 
-            <nav class="main-nav">
-                <ul id="main-menu" class="main-menu">
-                    <li class="main-menu-item">
-                        <a href="index.html"  class="main-menu-link">Inicio</a>
-                    </li>
-    
-                    <li class="main-menu-item">
-                        <a href="contactanos.html"  class="main-menu-link">Contacto</a>
-                    </li>
-    
-                    <li class="main-menu-item">
-                        <a href="registro.html"  class="main-menu-link">Registrarse</a>
-                    </li>
-    
-                </ul>
-            </nav>
+    <form action="">
+        <div class="form">
+            <h1>Inicia sesión</h1>
+            <div class="grupo">
+                <input type="text" name="" id="" required><span class="barra"></span>
+                <label>Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="password" name="" id="" required><span class="barra"></span>
+                <label>Contraseña</label>
+            </div>
+            <button type="submit">Enviar</button>
         </div>
-    <div class="contenedor">
-        <section class="contenedorS">
-            <h2>Iniciar sesión</h2>
-            <form class="form" action="">
-                <fieldset>
-                    <legend>Completa los campos</legend>
-                    <div class="contenedorDiv">
-                        <div class="campo">
-                            <input type="email" name="email" class="email" placeholder="E-mail">
-                        </div>
-                        <div class="campo">
-                            <input type="password" name="nombre" class="nombre" placeholder="Contraseña">
-                        </div>
-                    </div>
-                    <div class="boton">
-                        <input type="submit" class="botonPrincipal" value="Ingresar">
-                    </div>
-                    <h3><a href="registro.html">¿No tienes una cuenta?</a> </h3>
-                </fieldset>
-            </form>
-        </section>
-    </div>
+        <a href="registro.html">¿No tienes cuenta?</a>
+        <a href="index.html">Inicio</a>  
+    </form>
 </body>
 </html>
+
+
+
+
+
+
