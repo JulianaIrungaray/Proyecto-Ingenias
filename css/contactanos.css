@@ -110,9 +110,6 @@ form::before{
     width: 2%;
     box-shadow: 0px 0px 50rem;
 }
-
-
-
 .contenedor{
    padding: 15rem;
 }
@@ -120,8 +117,6 @@ form::before{
 .campo{
     margin-bottom: 2rem;
 }
-
-
 .campo input{
     background-color: rgba(255, 255, 255, 0.15);
     width: 100%;
