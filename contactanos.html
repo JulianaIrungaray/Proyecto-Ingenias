@@ -1,57 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contactanos.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/wine.png" type="image/x-icon"> <!--Es el ícono de la pestaña-->
+    <link rel="stylesheet" href="css/contactanos.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800,900" rel="stylesheet">
     <title>Contáctanos</title>
 </head>
 <body>
-    <header> <!-- El header se usa para lo primero de la parte de arriba como el menú y presentación -->
-        <nav class="main-nav">
-            <div id="menu-hambur" class="menu-hambur">
-                <img src="img/hambur.png" >
+    <form action="">
+        <div class="form">
+            <h1>Contáctanos</h1>
+            <div class="grupo">
+                <input type="text" name="" id="" required><span class="barra"></span>
+                <label>Nombre</label>
             </div>
-            <ul id="main-menu" class="main-menu">
-                <li class="main-menu-item">
-                    <a href="index.html"  class="main-menu-link">Inicio</a>
-                </li>
-
-
-                <li class="main-menu-item">
-                    <a href="registro.html"  class="main-menu-link">Registrarse</a>
-                </li>
-
-                <li class="main-menu-item">
-                    <a href="login.html"  class="main-menu-link">Iniciar sesión</a>
-                </li>
-
-            </ul>
-        </nav>
-    <div class="contenedor">
-        <section class="contenedorS">
-            <h2>Contáctanos</h2>
-            <form class="form" action="">
-                <fieldset>
-                    <legend>Completa los campos</legend>
-                    <div class="contenedorDiv">
-                        <div class="campo">
-                            <input type="text" name="nombre" class="nombre" placeholder="Nombre">
-                        </div>
-                        <div class="campo">
-                            <input type="email" name="email" class="email" placeholder="E-mail">
-                        </div>
-                        <div class="campo">
-                            <textarea type="textarea" name="Comentarios" placeholder="Escribe tu mensaje..."></textarea>
-                        </div>
-                    <div class="boton">
-                        <input type="submit" class="botonPrincipal" value="Enviar">
-                    </div>
-                </fieldset>
-            </form>
-        </section>
-    </div>
+            <div class="grupo">
+                <input type="email" name="" id="" required><span class="barra"></span>
+                <label>E-mail</label>
+            </div>
+            <div class="grupo">
+                <textarea name="" id="" rows="3" required></textarea><span class="barra"></span>
+                <label>Mensaje</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </div>
+        <a href="index.html">Inicio</a>  
+    </form>
 </body>
 </html>
