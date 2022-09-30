@@ -44,14 +44,7 @@ img{
     max-width: 100%;
 }
 
-.menu-hambur{
-    position: absolute;
-    top: 2.2rem;
-    right: 4rem;
-    cursor: pointer;
-    filter: invert(1); /*invierte el color*/
-    width: 40px;
-}
+
 
 .main-menu{
     list-style: none;
@@ -368,6 +361,7 @@ footer{
 
 }
 
+
 @media screen and (max-width:480px){
     nav{
         text-align: center;
@@ -441,6 +435,10 @@ footer{
 
     .titulo-final{
         font-size: 20px;
+    }
+    .img-redes{
+        align-items: center;
+        
     }
 }
 
