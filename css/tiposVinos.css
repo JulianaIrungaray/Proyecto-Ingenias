@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cormorant Upright', serif;
+    font-family: "Monserrat";
+	scroll-behavior: smooth;
 }
 body{
     background-color: rgb(109, 4, 31);
@@ -121,4 +122,23 @@ nav > a{
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
+}
+
+.scrollTop{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 10px 15px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 20px;
+	border-radius: 1px solid #fff;
+	cursor: pointer;
+	transform: all 0.5s ease 0;
+
+}
+
+.scrollTop:hover{
+	background: #f7f7f7;
+	color: #000;
 }
