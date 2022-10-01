@@ -36,8 +36,8 @@ main{
 
 header {
     width: 100%;
-    height: 700px;
-    background:  url(../img/wine.jpg);  
+    height: 870px;
+    background:  url(../img/tinto.jpg);  
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -105,13 +105,16 @@ nav > a{
 
 header .textos-header{
     display: flex;
-    height: 430px;
+    height: 390px;
     width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
+
+
+
   /*-----------Efecto de ola en movimiento------------  */
 h1 {
     font-size: 6vmin;
@@ -154,6 +157,7 @@ h1 {
     position: absolute;
     bottom: 0;
     width: 100%;
+
 }
 
 /* About us */
