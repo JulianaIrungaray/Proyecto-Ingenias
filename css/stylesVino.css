@@ -11,10 +11,11 @@ body{
     background: linear-gradient(rgb(109, 4, 31), rgb(138, 12, 29),rgb(85, 5, 5)); /*Fondo degradado*/
 }
 
-.scrollTop{
+#boton-arriba {
+    width: 3%;
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 40px;
     padding: 10px 15px;
     background-color: #000;
     color: #fff;
@@ -22,10 +23,10 @@ body{
     border-radius: 1px solid #fff;
     cursor: pointer;
     transform: all 0.5s ease 0;
-
+    
 }
 
-.scrollTop:hover{
-    background: #f7f7f7;
-    color: #000;
+    #boton-arriba:hover {
+        background: black;
+        color: #fff;
 }
