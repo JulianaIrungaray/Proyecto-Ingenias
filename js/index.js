@@ -1,28 +1,13 @@
-<<<<<<< HEAD
- const edadDelUsuario = parseInt(prompt("¿Cuál es tu edad?"));
- if(edadDelUsuario >= 18){
-}else{
-     alert("Eres menor de edad, no puedes ingresar a la página");
-     var pagina="script.html"
-     function redireccionar(){
-         location.href=pagina
-     }
-         setTimeout("redireccionar()", 1);
- }
-=======
-
-const edadDelUsuario = parseInt(prompt("¿Cuál es tu edad?"));
-if(edadDelUsuario >= 18){
-    alert("Bievenid@ a Vino Lovers ♥");
-}else{
-    alert("Eres menor de edad, no puedes ingresar a la página");
-    var pagina="script.html"
-    function redireccionar(){
-        location.href=pagina
-    }
-        setTimeout("redireccionar()", 1);
-
-}
+//  const edadDelUsuario = parseInt(prompt("¿Cuál es tu edad?"));
+//  if(edadDelUsuario >= 18){
+// }else{
+//      alert("Eres menor de edad, no puedes ingresar a la página");
+//      var pagina="script.html"
+//      function redireccionar(){
+//          location.href=pagina
+//      }
+//          setTimeout("redireccionar()", 1);
+//  } LO COMENTO PORQUE ES MOLESTO PARA TRABAJAR PORQUE TODO EL TIEMPO TE PIDE LA EDAD
 
 // recupera el botón
 let miboton = document.getElementById("boton-arriba");
@@ -43,6 +28,3 @@ function arribaFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-
->>>>>>> cd980d6526c04ded100b0daf09883b4a69a3252c
