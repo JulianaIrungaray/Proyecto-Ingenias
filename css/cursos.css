@@ -1,3 +1,4 @@
+
 html, body{
     margin: 0;
     padding: 0;
@@ -24,8 +25,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: left;
+    padding-right: 30px;
 }
 
+.main-nav{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 @media screen and (min-width: 768px){
@@ -69,9 +75,9 @@ nav > a{
 
 .title{
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     color:white;
-    margin-top: 30px;
+    margin-top: 10px;
     font-weight: 100;
     font-weight: bold;
 }
@@ -119,7 +125,7 @@ nav > a{
 }
 
 .container .card a {
-    font-weight: 700;
+    font-weight: 500px;
     text-decoration: none;
     color:white;
     font-weight: bold;
@@ -144,4 +150,74 @@ nav > a{
 
 .card{
     background-color: white;
+}
+
+/*MODAL CONTAINER*/
+
+.modal-container{
+    height: 400px;
+    width: 85%;
+    margin: 100px;
+    max-height: 88vh;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    /*scroll*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header-titulo{
+    justify-self: start;
+
+}
+
+.modal-header-button{
+    cursor: pointer;
+    position: absolute;
+
+}
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ver-carrito{
+    width: 50px;
+    margin-top: 20px;
+    padding-right: 50px;
+    
 }
