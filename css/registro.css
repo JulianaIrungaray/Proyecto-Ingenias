@@ -25,12 +25,13 @@ a{
     text-decoration: none;
     text-align: center;
     display:block;
+
 }
 
 h1{
     text-align: center;
     margin: 10px 0;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 form{
@@ -50,6 +51,7 @@ form .grupo{
     position: relative;
     margin: 45px;
 }
+
 
 input, textarea{
     background: none;
