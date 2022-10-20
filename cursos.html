@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="img/wine.png" type="image/x-icon"> <!--Es el ícono de la pestaña-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cursos.css">
     <title>Cursos</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/cursos.css">
+    <link rel="shortcut icon" href="img/wine.png" type="image/x-icon"> <!--Es el ícono de la pestaña-->
+    <script defer src="js/stock.js"></script>
+    <script defer src="js/modal.js"></script>
+    <script defer src="js/app.js"></script>
 </head>
 <body>
-    <nav class="main-nav">
-        <ul id="main-menu" class="main-menu">
-            <li class="main-menu-item">
-                <a href="index.html" class="main-menu-link">🢀</a>
-            </li>
-            <li class="ver-carrito" id="verCarrito">🛒</li>
-        </ul>
-    </nav>
-    <h1 class="title">Cursos</h1>
-
-    <!--CURSOS-->
-    <div id="cursitos" class="container"></div>
-
-    <!--MODAL CONTAINER-->
-    <div id="modal-container" class="modal-container"></div>
+    <header>
+        <h1 id="titulo" class="titulo">Cursos</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        <a href="index.html"><button id="boton-carrito"></span>🢀</button></a>
+        
+    </header>
 
 
+    <main id="contenedor-productos">
 
-    <script src="./js/cursos.js" ></script>
+    </main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Curso 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
 </body>
 </html>

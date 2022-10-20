@@ -31,7 +31,7 @@ const cursos = [
 let carrito = []; //carrito vacio//
 
 cursos.forEach((todos) => {
-    let content = document. createElement("div");
+    let content = document.createElement("div");
     content.className = "card"; //con esta propiedad se le da clase al container padre//
     content.innerHTML = `
         <card style="background"></card>
@@ -43,7 +43,7 @@ cursos.forEach((todos) => {
 
     cursitos.append(content);
 
-    let comprar = document.createElement("button")
+    let comprar = document.createElement("button");
         comprar.innerText = "comprar";
         comprar.className = "comprar"; //clase para el botón//
 
@@ -51,6 +51,7 @@ cursos.forEach((todos) => {
 
     comprar.addEventListener("click", () => { //escucha el evento de comprar//
         carrito.push({ //que es lo que quiero que agregue al carrito// 
+            id: cursos.id,
             img: todos.img,
             nombre: todos.nombre,
             precio: todos.precio,
