@@ -40,6 +40,8 @@ h1 {
 }
 h3{
     font-size: 25px;
+    margin: auto;
+    
 }
 
 #boton-carrito {
@@ -68,6 +70,7 @@ h3{
     text-align: center;
 }
 
+
 p {
     line-height: 2;
     font-size: 20px;
@@ -91,8 +94,10 @@ p {
 }
 .precioProducto {
     font-weight: 700;
+    width: 100%;
 }
 .boton-agregar {
+    width: 100%;
     background-color:#9e0221;
     color: white;
     font-size: 25px;
@@ -101,7 +106,20 @@ p {
     border-radius: 15px;
     text-align: center;
     justify-content: center;
+    margin: 20px 80px 10px;
 }
+.boton__agregar__carrito{
+    width: 50%;
+    background-color:#9e0221;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 150px;
+    
+}
+
 .boton-agregar:hover {
     cursor: pointer;
     background-color: rgb(70, 0, 12);
