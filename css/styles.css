@@ -9,7 +9,7 @@
 body {
     width: 100%;
     height:900px;
-    font-family: "Montserrat";
+    font-family: 'Alegreya', serif;
 }
 
 .contenedor {
@@ -92,6 +92,7 @@ img{
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
+    font-family: 'Source Serif Pro', serif;
 }
 
 nav > a{
@@ -109,16 +110,17 @@ header .textos-header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
+    
 }
 
 
 
   /*-----------Efecto de ola en movimiento------------  */
 h1 {
-    font-size: 6vmin;
+    font-size: 7vmin;
     position: absolute;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Alegreya', serif;
   }
   
   .border {
@@ -147,9 +149,10 @@ h1 {
   /*-----------------------  */
 
 .textos-header h2{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300;
     color:#fff;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .wave{
@@ -163,6 +166,7 @@ h1 {
 
 main .sobre-nosotros{
     padding: 30px 0 60px 0;
+    font-family: 'Source Serif Pro', serif;
 }
 .contenedor-sobre-nosotros{
     display: flex;
@@ -187,11 +191,12 @@ main .sobre-nosotros{
 
 .contenido-textos p{
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     padding: 0px 0px 30px 15px;
     font-weight: 500;
     text-align: justify;
     justify-content: space-around;
+    font-family: 'Source Serif Pro', serif;
 }
 
 /* Galeria */
@@ -208,6 +213,7 @@ main .sobre-nosotros{
 }
  a{
     text-decoration: none;
+    font-family: 'Source Serif Pro', serif;
 }
 .imagen-port{
     width: 24%;
@@ -245,6 +251,7 @@ main .sobre-nosotros{
 
 .hover-galeria p{
     color: #fff;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .imagen-port:hover .hover-galeria{
@@ -281,11 +288,11 @@ main .sobre-nosotros{
 .cards .card > .contenido-texto-card{
     width: 60%;
     color: #fff;
-    font-family: 'Cormorant Upright', serif;
 }
 
 .cards .card > .contenido-texto-card p{
     font-weight: 300;
+    font-family: 'Source Serif Pro', serif;
     padding-top: 5px;
 }
 
@@ -312,9 +319,10 @@ footer{
 
 .titulo-final{ /*footer*/
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     margin: 20px 0 0 0;
     color: #9e9797;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .img-redes{
@@ -438,7 +446,7 @@ footer{
     
     .titulo-final{
         font-size: 10px;
-
+        
     }
     .img-redes{
         align-items: center;
