@@ -1,3 +1,5 @@
+
+
 window.onload = init;
     function init(){
         document.querySelector(".emergente .menor").addEventListener("click",adios);
@@ -7,7 +9,14 @@ window.onload = init;
     function adios(){
         location.href="errorEdad.html";
     }    
-    function hola(){
+    function hola(){//
         document.querySelector(".emergente").style.display="none";
         document.querySelector(".containerEdad").style.opacity="1";
     }
+
+    //if (!localStorage.getItem('first-time')){
+        //setTimeout(showPopup, 1000);
+       // localStorage.setItem('first-time',1);
+    //}
+
+

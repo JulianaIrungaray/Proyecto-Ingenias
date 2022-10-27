@@ -214,13 +214,22 @@ p {
     outline: none;
 }
 
-/*QUERY CURSOS
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 922px) {
     #contenedor-productos  {
+        margin: 60px auto;
         display: flex;
+        flex-direction: row;
+        
+    }
+
+}
+/*
+@media screen and (min-width: 0px) {
+    #contenedor-productos  {
+        width: 100%;
+        display: none;
         flex-wrap: wrap;
 
-    
     }
-}*/
+}
