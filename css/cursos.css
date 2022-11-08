@@ -1,22 +1,17 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100%;
-    letter-spacing: 0.03em;
-    line-height: 1.6;
-    background: #9e0221;
-    background: -webkit-linear-gradient(to right, #9e0221, #680034);
-    background: linear-gradient(to right, #9e0221, #660033);
+    background: linear-gradient(rgb(109, 4, 31), rgb(138, 12, 29),rgb(105, 0, 40)); /*Fondo degradado*/
 }
 img {
     width: 400px;
-    height: 450px;
+    height: 350px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -77,8 +72,8 @@ p {
     text-align: center;
 }
 .producto {
-    max-width: 50%;
-    padding: 50px;
+    max-width: 30%;
+    padding: 30px;
     margin: 30px;
     margin-bottom: 10px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
@@ -211,4 +206,18 @@ p {
 }
 .boton-eliminar:focus {
     outline: none;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+
+	#contenedor-productos, .producto{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding: 30px;
+        margin: 30px;
+        margin-bottom: 10px;
+
+	}
+	
 }
