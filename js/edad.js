@@ -1,5 +1,4 @@
 
-
 window.onload = init;
     function init(){
         document.querySelector(".emergente .menor").addEventListener("click",adios);
